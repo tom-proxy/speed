@@ -57,7 +57,7 @@ let content = ''
   console.log(`icon=shifts[${a}]:`+shifts[a])
 	console.log(`icon-color[${b}]:`+shifts[b])
   title = `NetSpeed`
-  content = `🔻➠${round(Math.abs(speed * 8))} Mbps [${round(Math.abs(speed, 2), 1)} MB/s]\n⏳➠${round(Math.abs(duration, 2),2)}s🌐➠${pingt} ms⏰➠${new Date().toTimeString().split(' ')[0]}`
+  content = `🔻➠${round(Math.abs(speed * 8))} Mbps [${round(Math.abs(speed, 2), 1)} MB/s]   ⏳➠${round(Math.abs(duration, 2),2)}s\n🌐➠${pingt} ms   ⏰➠${new Date().toTimeString().split(' ')[0]}`
   if ($.isTile()) {
     await notify('网络速率', '面板', '查询完成')
   } else if(!$.isPanel()) {
