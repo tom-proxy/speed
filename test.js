@@ -43,7 +43,7 @@ let content = ''
 	console.log('to see:'+pingt)
 	console.log(duration)
   const a = Diydecide(0,6,18,round(Math.abs(speed * 8)))
-  const b = Diydecide(0,200,300,pingt) + 3
+  const b = Diydecide(0,188,300,pingt) + 3
 	let shifts = {
 		'1': arg?.iconslow,
 		'2': arg?.iconmid,
