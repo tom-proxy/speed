@@ -12,7 +12,7 @@ colorlow、colormid、colorhigh 分别对应延迟低中高时的图标颜色
 可直接使用最基本的panel参数，title、icon、icon-color
 配置实例：titile=不想花里胡哨了&icon=hare&icon-color=#CDCDCD
 */
-const $ = new Env('𝕊𝕡𝕖𝕖𝕕𝕥𝕖𝕤𝕥')
+const $ = new Env('network-speed')
 $.isPanel = () => $.isSurge() && typeof $input != 'undefined' && $.lodash_get($input, 'purpose') === 'panel'
 $.isTile = () => $.isStash() && typeof $script != 'undefined' && $.lodash_get($script, 'type') === 'tile'
 // $.isStashCron = () => $.isStash() && typeof $script != 'undefined' && $.lodash_get($script, 'type') === 'cron'
