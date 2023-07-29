@@ -30,7 +30,7 @@ let content = ''
   const bytes = mb * 1024 * 1024
   let start = Date.now()
   const res = await $.http.get({
-    url: `http://captive.apple.com/__down?bytes=${bytes}`
+    url: `http://www.apple.com/__down?bytes=${bytes}`
   })
   const end = Date.now()
   const duration = (end - start) / 1000
