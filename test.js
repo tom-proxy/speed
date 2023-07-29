@@ -30,7 +30,7 @@ let content = ''
   const bytes = mb * 1024 * 1024
   let start = Date.now()
   const res = await $.http.get({
-    url: `http://www.apple.com/__down?bytes=${bytes}`
+    url: `https://speed.cloudflare.com/__down?bytes=${bytes}`
   })
   const end = Date.now()
   const duration = (end - start) / 1000
@@ -42,7 +42,7 @@ let content = ''
 	pingt = Date.now()-pingstart
 	console.log('to see:'+pingt)
 	console.log(duration)
-  const a = Diydecide(0,80,120,round(Math.abs(speed * 8)))
+  const a = Diydecide(0,8,15,round(Math.abs(speed * 8)))
   const b = Diydecide(0,150,300,pingt) + 3
 	let shifts = {
 		'1': arg?.iconslow,
