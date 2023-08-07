@@ -37,7 +37,7 @@ let content = ''
   const speed = mb / duration
   const pingstart = Date.now()
 	const ping = await $.http.get({
-		url: `https://speed.cloudflare.com`
+		url: `http://cp.cloudflare.com`
   })
 	pingt = Date.now()-pingstart
 	console.log('to see:'+pingt)
