@@ -27,14 +27,14 @@ let content = ''
   const bytes = mb * 1024 * 1024
   let start = Date.now()
   const res = await $.http.get({
-    url: `https://speed.cloudflare.com?bytes=${bytes}`
+    url: `https://speed.cloudflare.com/__down?bytes=${bytes}`
   })
   const end = Date.now()
   const duration = (end - start) / 1000
   const speed = mb / duration
   const pingstart = Date.now()
 	const ping = await $.http.get({
-		url: `http://cp.cloudflare.com`
+		url: `http://cp.cloudflare.com/generate_204`
   })
 	pingt = Date.now()-pingstart
 	console.log('to see:'+pingt)
